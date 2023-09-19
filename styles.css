@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url('https://img.freepik.com/fotos-premium/efecto-textura-nieve-blanca-natural-aislado-sobre-fondo-noche-negra_231311-5480.jpg'); */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #1b1b1b;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #1b1b1b;
+    padding: 20px;
+    z-index: 100;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    border-radius: 20px;
+}
+
+header nav a:hover{
+    color: #ffffff;
+}
+
+.nav-image{
+    height: 20px;
+}
+
+.info{
+    width: 100%;
+    background-image: url('./images/ESTAMPA\ STORE.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: #ffffff;
+    height: 684px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 830px;
+}
+
+.info-container h2{
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info-container p{
+    font-size: 20px;
+    text-align: center;
+    background-color: #007bff;
+}
+
+.informacion{
+  text-decoration: none;
+  background-color: #0095ff;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+.flags{
+    margin-top: 20px;
+}
+
+.img-flag{
+    border-radius: 5px;
+    height: 20px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.subtitle{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+
+
+.categorias{
+    display: flex;
+    margin: 5px 120px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categoria{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.181);
+    border-radius: 10px;
+    box-shadow: 20px 20px 31px rgb(45, 45, 45);
+}
+
+.categoria:hover{
+    box-shadow: 2px 2px 3px black;
+    background-color: rgba(80, 78, 78, 0.181);
+    filter: blur(2px);
+    z-index: 1;
+}
+
+.categoria img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.categoria .text{
+    margin-top: 20px;
+}
+
+.a{
+    text-decoration: none;
+    color: black;
+}
+
+.products{
+  display: flex;
+  margin: 5px 35px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.a{
+  text-decoration: none;
+}
+
+.product{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.product:hover{
+  box-shadow: 2px 2px 3px black;
+  background-color: rgba(80, 78, 78, 0.181);
+  filter: saturate(200%);
+
+}
+
+.product img{
+  border-radius: 10px;
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.product .text{
+  margin-top: 20px;
+  color: white;
+  border: none;
+}
+
+.subtitle2{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 50px 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subtitle-question {
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .faq-item {
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  .question {
+    color: #007bff;
+  }
+  
+  .answer {
+    margin-top: 5px;
+  }
+  
+  .faq-item.active .answer {
+    display: block;
+  }
+
+  .contacto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .contacto2 img{
+    height: 150px;
+  }
+
+  footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+
+@media screen and (max-width: 950px){
+
+  .info{
+    background-image: url('./images/ESTAMPA\ STORE-pequeño.png');
+    background-size: cover;
+  }
+
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .redes-sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
